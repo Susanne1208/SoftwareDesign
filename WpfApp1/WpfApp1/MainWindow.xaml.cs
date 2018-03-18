@@ -26,11 +26,12 @@ namespace WpfApp1
             InitializeComponent();
             BackgroundMusic.Play();
             BackgroundMusic.Volume = 0;
+            
         }
-        private void MusicSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-            BackgroundMusic.Volume = (double)MusicSlider.Value/100;
-        }
+        //private void MusicSlider_ValueChanged(object sender, PropertyChangedEventArgs e)
+        //{
+        //    BackgroundMusic.Volume = 
+        //}
 
         private void SoundSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {

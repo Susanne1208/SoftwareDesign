@@ -6,24 +6,24 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="Options" Height="400" Width="525">
-    <Grid>
-        <Slider HorizontalAlignment="Left" Margin="227,48,0,0" 
+    <Grid DataContext="{Binding Source={StaticResource ViewModelLocator},
+ Path=OptionsViewModel}">
+        <Slider Value="{Binding ElementName=BackgroundMusic, Path=Volume}" HorizontalAlignment="Left" Margin="227,48,0,0" 
                 VerticalAlignment="Top" Width="259" Minimum="0" 
-                Maximum="100" TickPlacement="BottomRight" TickFrequency="10" 
+                Maximum="1" TickPlacement="BottomRight" TickFrequency="0.1" 
                 IsSnapToTickEnabled="true" 
-                Name="MusicSlider" ValueChanged="MusicSlider_ValueChanged"/>
+                Name="MusicSlider"/>
         <Label Content="Music" HorizontalAlignment="Left" Margin="32,37,0,0" 
                VerticalAlignment="Top" FontSize="24" FontFamily="Consolas"/>
-        <Label Content="{Binding ElementName=MusicSlider, Path=Value, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" 
-               Margin="165,37,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.48,0.59" FontSize="24" FontFamily="Consolas"/>
-        <MediaElement Name ="BackgroundMusic" 
-                      Source="C:\Users\Susan\OneDrive - Aarhus universitet\Arhus_Universitet\3_Semester\DSB\DSB_Eksamen\How2PassDSB\Del 2\Lektion 7 - Quantization\Queen - Bicycle Race.mp3" HorizontalAlignment="Left" 
+        <Label Content="{Binding ElementName=MusicSlider, Path=Value}" HorizontalAlignment="Left" 
+               Margin="167,37,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontSize="24" FontFamily="Consolas"/>
+        <MediaElement Volume="{Binding Path=MusicVolume, UpdateSourceTrigger=PropertyChanged}" Name ="BackgroundMusic" 
+                      Source="Sounds/Hjulene på bussen  Børnesang med fagter  Pixitrolden og Guitar-Krelle - en rigtig pixi.mp3" HorizontalAlignment="Left" 
                       Height="100" Margin="342,192,0,0" VerticalAlignment="Top" Width="100"
                       LoadedBehavior="Manual" UnloadedBehavior="Stop" />
         <Label Content="Sounds" HorizontalAlignment="Left" Margin="32,90,0,0" 
                VerticalAlignment="Top" FontSize="24" FontFamily="Consolas"/>
-        <Label Content="{Binding ElementName=SoundSlider, Path=Value, 
-            UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" 
+        <Label Content="{Binding ElementName=SoundSlider, Path = Value}" HorizontalAlignment="Left" 
                Margin="165,90,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Consolas"/>
         <Slider HorizontalAlignment="Left" Margin="227,101,0,0" VerticalAlignment="Top" 
                 Width="259" Minimum="0" Maximum="1" TickPlacement="BottomRight" 
