@@ -28,8 +28,8 @@
         <Slider HorizontalAlignment="Left" Margin="227,101,0,0" VerticalAlignment="Top" 
                 Width="259" Minimum="0" Maximum="1" TickPlacement="BottomRight" 
                 TickFrequency="0.1" Name="SoundSlider" ValueChanged="SoundSlider_ValueChanged"/>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="411,318,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" FontSize="24" FontFamily="Consolas"/>
-        <Button Content="Key Controls" HorizontalAlignment="Left" Margin="41,171,0,0" VerticalAlignment="Top" Width="179" FontFamily="Consolas" FontSize="24" Height="46"/>
-        <Button Content="Help" HorizontalAlignment="Left" Margin="41,247,0,0" VerticalAlignment="Top" Width="91" FontFamily="Consolas" FontSize="24" Height="39"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="32,280,0,0" VerticalAlignment="Top" Width="179" Click="Button_Click" FontSize="24" FontFamily="Consolas" Height="40"/>
+        <Button Content="Key Controls" HorizontalAlignment="Left" Margin="32,160,0,0" VerticalAlignment="Top" Width="179" FontFamily="Consolas" FontSize="24" Height="40"/>
+        <Button Content="Help" HorizontalAlignment="Left" Margin="32,220,0,0" VerticalAlignment="Top" Width="179" FontFamily="Consolas" FontSize="24" Height="40"/>
     </Grid>
 </Window>
