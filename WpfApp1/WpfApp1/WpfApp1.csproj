@@ -98,7 +98,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Sounds\Hjulene på bussen  Børnesang med fagter  Pixitrolden og Guitar-Krelle - en rigtig pixi.mp3" />
+    <Content Include="Sounds\Phillip_Gross_-_05_-_Kaffeehausmusik.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

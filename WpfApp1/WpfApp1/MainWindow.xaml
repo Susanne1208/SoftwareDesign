@@ -18,7 +18,7 @@
         <Label Content="{Binding ElementName=MusicSlider, Path=Value}" HorizontalAlignment="Left" 
                Margin="167,37,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontSize="24" FontFamily="Consolas"/>
         <MediaElement Volume="{Binding Path=MusicVolume, UpdateSourceTrigger=PropertyChanged}" Name ="BackgroundMusic" 
-                      Source="Sounds/Hjulene på bussen  Børnesang med fagter  Pixitrolden og Guitar-Krelle - en rigtig pixi.mp3" HorizontalAlignment="Left" 
+                      Source="<indsæt path til mp3 fil (evt. den under sounds)>" HorizontalAlignment="Left" 
                       Height="100" Margin="342,192,0,0" VerticalAlignment="Top" Width="100"
                       LoadedBehavior="Manual" UnloadedBehavior="Stop" />
         <Label Content="Sounds" HorizontalAlignment="Left" Margin="32,90,0,0" 
